@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/1200x/4c/cb/fb/4ccbfba5b8e2e770d6bf29f7a37e25e0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(35, 35, 35, 0.696);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0; /* Adicionei espaçamento vertical ao cabeçalho */
+}
+
+.bosta {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+main {
+  background-color: rgba(23, 23, 23, 0.628);
+  width: 100%;
+  max-width: 400px;
+  margin: 120px auto 20px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+p {
+  text-align: justify;
+  letter-spacing: -1px;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.logo img {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  justify-content: space-between;
+  float: left;
+  margin-right: 10px;
+}
+
+/* Regras de mídia para tornar o layout responsivo */
+@media screen and (max-width: 480px) {
+  /* Quando a largura da tela for 480px ou menos */
+    main {
+    width: 90%;
+    max-width: none;
+    }
+
+    p {
+    font-size: 18px;
+    }
+}
